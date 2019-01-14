@@ -1,0 +1,120 @@
+/*home page edits*/
+
+.container{
+	border-left-width: 
+	background-color: gray;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 50px 660px auto;
+	width: 100%;
+
+	/*Grid Area Template */
+	grid-template-areas: 
+		"navbar"
+		"main-content"
+		"message"
+}
+/*navbar style fixed top*/
+.navbar{
+	width: 90%;
+	position: sticky;
+	top: 0;
+	left: 0px;
+	font-family: 'Amatic SC', cursive;
+	font-family: 2em;
+	padding: 15px 5%;
+	background-color: #1E1E24;
+	grid-area: navbar;
+	display: grid;
+	grid-template-columns: repeat(2,minmax(100px,1fr));
+	grid-template-areas: 
+		"navbar_links navbar_social"
+	;
+	z-index: 5;
+}
+
+/*style for main section of home page*/
+.main-container{
+	background-image: url(https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80);
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: main-content;
+    padding-right: 5%;
+	padding-left: 5%;
+}
+
+
+/*Style sheet for home message board*/
+.home-message-container{
+	background-color: #F7EBE8;
+	grid-area: message;
+	text-align: center;
+	padding: 10px 10%;
+	z-index: 2;
+}
+/**/
+.home-message-container h3{
+	font-size: 1em;
+}
+
+/*removes padding*/
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #F2F2F2;
+}
+
+/*Navigation buttons of home ABout prohect*/
+.nav-list{
+	list-style-type: none;
+	margin: 0;
+	grid-area: navbar_links;
+	justify-self: start;
+	padding-left: 0;
+}
+
+/*Social media icons*/
+.social-items{
+	list-style-type: none;
+	margin: 0;
+	justify-self: end;
+	grid-area: navbar_social;
+	padding-right: 0;
+}
+/*Style for list items*/
+.social-items li  a{
+	padding-left: .6em;
+	padding-right: .6em;
+}
+
+/*Links in the nav bar*/
+.nav-item {
+ 	display: inline;
+}
+
+/*Style for the link tag*/
+li a{
+	color: white;
+  	text-align: center;
+ 	padding: 14px 16px;
+ 	text-decoration: none;
+}
+/**/
+
+/*style editing for main title/intro */
+.main-title{
+	text-align: center;
+	margin-top: 70px;
+	font-size: 1em;
+}
+.main-title h1{
+	font-family: 'Amatic SC', cursive;
+	font-size: 4.5em;
+	margin-bottom: 3px;
+}
+.main-title p{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
